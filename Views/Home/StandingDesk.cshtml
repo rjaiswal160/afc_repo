@@ -1,0 +1,145 @@
+﻿@using Afc_web.Common;
+@using Afc_web.Models;
+@model ProductDeskTypeViewModel
+<h1>@ViewData["Title"]</h1>
+<style>    /* Container: horizontal layout */
+    .woopack-products-grid-wrap {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    }
+
+    /* ========== Left Side (div1) ========== */
+    #div1 {
+    width: 250px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    }
+
+    /* List styling for menu */
+    #div1 ul.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+
+    /* Each item has full border and spacing */
+    #div1 li.menu-item {
+    overflow: hidden;
+    background-color: #fff;
+    text-transform: uppercase;
+    }
+
+    #div1 li.menu-item a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.2s ease;
+    }
+
+    #div1 li.menu-item a:hover {
+    background-color: #f0f0f0;
+    }
+
+    /* ========== Right Side (div2) ========== */
+    #div2 {
+    flex: 1;
+    }
+
+    .tile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+
+    .tile {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+    }
+
+    .tile:hover {
+    transform: translateY(-5px);
+    }
+
+    .tile-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    }
+
+    .tile-content {
+    padding: 10px;
+    }
+
+    .tile-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 5px;
+    }
+
+    .tile-meta {
+    font-size: 14px;
+    color: #666;
+    }
+
+
+</style> 
+
+<div class="woopack-products-grid-wrap woocommerce">
+
+    <div id="div1" class="fl-menu">
+        <div class="fl-clear"></div>
+        <nav aria-label="Standing desk category menu" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+            <ul id="menu-standing-desks-category-menu" class="menu fl-menu-vertical fl-toggle-none">
+                <li style="background-color: #00446b; color: #fff;">
+                    <a>STANDING DESKS</a>
+                </li>
+                @foreach (var config in Model.deskTypeModels)
+                {
+                    <li id="@config.Id" class="menu-item menu-item-type-post_type menu-item-object-page">
+                        <a href="~/@config.SEO_Slug">@config.Name</a></li>
+
+                }
+
+            </ul>
+        </nav>
+    </div>
+
+    <div id="div2">
+    <ul class="woopack-products products" style="position: relative; height: 1718.86px;">
+            <h1>@Model.productDeskTypeModels.FirstOrDefault()?.DeskTypeName</h1>
+            @* <img src="@Model.productDeskTypeModels.FirstOrDefault()?.DeskTypeImageUrl" class="product-image" /> *@
+
+        <ul class="tile-grid"
+            @foreach (var config in Model.productDeskTypeModels)
+            {
+                <li class="tile">
+                    <div class="tile-image">
+                        <a href="~/product/@config.SEO_Slug" title="@config.Name">
+                            <img src="@config.ImageUrl" alt="@config.Name" class="product-image" />
+                        </a>
+                    </div>
+                    <div class="tile-content">
+                        <h3 class="tile-title">
+                            <a href="~/product/@config.SEO_Slug" title="@config.Name">@config.Name</a>
+                        </h3>
+                        <div class="tile-meta">
+                            <span class="sku">SKU: @config.SKU</span>
+                        </div>
+                    </div>
+                </li>
+            }
+        </ul>
+
+    </ul>
+    </div>
+</div>

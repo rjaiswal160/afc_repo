@@ -1,0 +1,134 @@
+﻿@model ContactModel
+@{
+    ViewData["Title"] = "Afc contact";
+}
+<style>
+    .title-color{
+        color: #1b69b4;
+        font-weight:bold;
+    }
+    .text-bold{
+     font-weight:bold;
+    }
+
+    .fl-heading {
+        font-weight: 500;
+        font-size: 26px;
+    }
+
+    
+</style>
+<h2 class="title-color"> <span class="fl-heading-text">Contact AFC Industries For Tailored Ergonomic Solutions</span></h2>
+<div class="fl-rich-text"><p>At <a href="https://afcindustries.com/">AFC Industries</a>, we are dedicated to providing you with top-tier ergonomic solutions that enhance your workspace. Whether you're looking for ergonomic workstations, custom-designed furniture, or specialized accessories, our team is here to assist you. If you have any inquiries or need personalized recommendations, don't hesitate to contact <a href="https://afcindustriespa.com/" target="_blank" rel="noopener">AFC Industries</a>. We value your feedback and are committed to helping you create a comfortable and efficient workspace that meets your unique requirements. Reach out to us today, and let's work together to transform your workspace into an ergonomic haven. Your satisfaction is our priority, and we're just a click or call away. Contact AFC Industries now to embark on your journey to improved workspace comfort and productivity.</p></div>
+
+@using (Html.BeginForm("Contact", "Home", FormMethod.Post))
+{
+    <div class="row">
+        <div class="col-6">
+            <h1 class="fl-heading"> <span class="fl-heading-text">Contact Us</span></h1>
+            <h2 class="fl-heading"> <span class="fl-heading-text">Send us message here</span></h2>
+    <div>
+        @Html.LabelFor(m => m.FirstName, new { @class = "text-bold" })
+        @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control", placeholder = "First Name" })
+        @Html.ValidationMessageFor(m => m.FirstName, "", new { @class = "text-danger" })
+    </div>
+
+    <div>
+                @Html.LabelFor(m => m.LastName, new { @class = "text-bold" })
+        @Html.TextBoxFor(m => m.LastName, new { @class = "form-control", placeholder = "Last Name" })
+        @Html.ValidationMessageFor(m => m.LastName, "", new { @class = "text-danger" })
+    </div>
+
+    <div>
+                @Html.LabelFor(m => m.Email, new { @class = "text-bold" })
+        @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Email" })
+        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+    </div>
+
+    <div>
+                @Html.LabelFor(m => m.Phone, new { @class = "text-bold" })
+        @Html.TextBoxFor(m => m.Phone, new { @class = "form-control", placeholder = "Phone" })
+        @Html.ValidationMessageFor(m => m.Phone, "", new { @class = "text-danger" })
+    </div>
+
+    <div>
+                @Html.LabelFor(m => m.Ext, new { @class = "text-bold" })
+        @Html.TextBoxFor(m => m.Ext, new { @class = "form-control", placeholder = "Ext (optional)" })
+        @Html.ValidationMessageFor(m => m.Ext, "", new { @class = "text-danger" })
+    </div>
+
+    <div>
+                @Html.LabelFor(m => m.CompanyName, new { @class = "text-bold" })
+        @Html.TextBoxFor(m => m.CompanyName, new { @class = "form-control", placeholder = "Company Name" })
+        @Html.ValidationMessageFor(m => m.CompanyName, "", new { @class = "text-danger" })
+    </div>
+
+    <div>
+                @Html.LabelFor(m => m.Website, new { @class = "text-bold" })
+        @Html.TextBoxFor(m => m.Website, new { @class = "form-control", placeholder = "Website" })
+        @Html.ValidationMessageFor(m => m.Website, "", new { @class = "text-danger" })
+    </div>
+
+
+    <div>
+                @Html.LabelFor(m => m.Subject, new { @class = "text-bold" })
+        @Html.TextBoxFor(m => m.Subject, new { @class = "form-control", placeholder = "Subject" })
+        @Html.ValidationMessageFor(m => m.Subject, "", new { @class = "text-danger" })
+    </div>
+
+    <div>
+                @Html.LabelFor(m => m.Message, new { @class = "text-bold" })
+        @Html.TextAreaFor(m => m.Message, new { @class = "form-control", placeholder = "Message" })
+        @Html.ValidationMessageFor(m => m.Message, "", new { @class = "text-danger" })
+    </div>
+   </div>
+   <div class="col-6">
+            <div class="fl-icon-wrap"> <span class="fl-icon"> 
+                <i class="fas fa-list-ul" aria-hidden="true"></i> 
+                </span><div id="fl-icon-text-jhse5ztgo0bd" class="fl-icon-text fl-icon-text-wrap">
+                    <h2 style="font-size:26px;font-weight:700;">Contact Information</h2></div></div>
+            @* <h2 style="font-size:26px;font-weight:700;">Contact Information</h2> *@
+            <table class="table">
+                <tr>
+                    <td><b>Toll Free</b></td>
+                    <td>1-800-663-3412</td>
+                </tr>
+                <tr>
+                    <td><b>Local Phone</b></td>
+                    <td>718-747-0237</td>
+                </tr>
+                <tr>
+                    <td><b>Fax</b></td>
+                    <td>718-747-0726</td>
+                </tr>
+                <tr>
+                    <td><b>Address</b></td>
+                    <td><a href="https://goo.gl/maps/QWaieVBqre5ZWL7k9" target="_blank" rel="noopener">13-16 133rd Place College Point, NY 11356 </a></td>
+                </tr>
+                <tr>
+                    <td><b>Sales</b></td>
+                    <td>afcsales@afcindustries.com</td>
+                </tr>
+                <tr>
+                    <td><b>Billing</b></td>
+                    <td>afcsales@afcindustries.com</td>
+                </tr>
+                <tr>
+                    <td><b>Shipping</b></td>
+                    <td>shipping@afcindustries.com</td>
+                </tr>
+                <tr>
+                    <td><b>Customer Service</b></td>
+                    <td>service@afcindustries.com</td>
+                </tr>
+                <tr>
+                    <td><b>Apply for Job</b></td>
+                    <td>jobinfo@afcindustries.com</td>
+                </tr>
+            </table>
+            
+   </div>
+  </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+}

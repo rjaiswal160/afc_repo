@@ -1,0 +1,167 @@
+﻿@using Afc_web.Common;
+@model List<Configurator>
+<h1>@ViewData["Title"]</h1>
+<link href="~/css/autoptimize_single.css" rel="stylesheet" />
+<link href="~/css/autoptimize_single_1.css" rel="stylesheet" />
+<style>
+
+</style>
+<h2>Square Base Floor Post</h2>
+<p>Let’s Start Your Build. Please choose a size, shape and color.</p>
+<div class="row">
+    <div class="col">
+    </div>
+    <div class="col" style="height: 100vh; overflow-y: scroll;">
+        <div class="accordion" id="accordionItems">
+            <div class="accordion-item">
+                <h2 class="" id="heading-00"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-00" aria-expanded="true" aria-controls="collapse-00">Monitor Holder Front</button></h2>
+                <div id="collapse-00" class="accordion-collapse collapse show" aria-labelledby="heading-00" style="">
+                    <div class="accordion-body">
+                        <div class="row">
+                            @foreach (var config in Model.Where(con => con.ProductType == "monitor_holder_front"))
+                            {
+                                <div class="item @(Model.IndexOf(config) == 0 ? "selected" : "")">
+                                    <div class="image">
+                                        <img decoding="async" src="@config.ImageUrl" alt="@config.ProductName" />
+                                    </div>
+                                    <p class="title">@config.ProductName</p>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-track_mounts">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-color" aria-expanded="false" aria-controls="collapse-track_mounts">Monitor Holder Back</button>
+                </h2>
+                <div id="collapse-color" class="accordion-collapse collapse" aria-labelledby="heading-track_mounts" style="">
+                    <div class="accordion-body">
+                        <div class="row">
+                            @foreach (var config in Model.Where(con => con.ProductType == "monitor_holder_back"))
+                            {
+                                <div class="item @(Model.IndexOf(config) == 0 ? "selected" : "")">
+                                    <div class="image">
+                                        <img decoding="async" src="@config.ImageUrl" alt="@config.ProductName" />
+                                    </div>
+                                    <p class="title">@config.ProductName</p>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-color">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-color" aria-expanded="true" aria-controls="collapse-color">Monitor or Laptop</button>
+                </h2>
+                <div id="collapse-color" class="accordion-collapse collapse show" aria-labelledby="heading-color">
+                    <div class="accordion-body">
+                        <div class="row">
+                            @foreach (var config in Model.Where(con => con.ProductType == "monitor_or_laptop"))
+                            {
+                                <div class="item @(Model.IndexOf(config) == 0 ? "selected" : "")">
+                                    <div class="image">
+                                        <img decoding="async" src="@config.ImageUrl" alt="@config.ProductName" />
+                                    </div>
+                                    <p class="title">@config.ProductName</p>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">Keyboard Tray</button>
+                </h2>
+                <div id="collapse-2" class="accordion-collapse collapse show" aria-labelledby="heading-2">
+                    <div class="accordion-body">
+                        <div class="row">
+
+                            @foreach (var config in Model.Where(con => con.ProductType == "keyboard_tray"))
+                            {
+                                <div class="item @(Model.IndexOf(config) == 0 ? "selected" : "")">
+                                    <div class="image">
+                                        <img decoding="async" src="@config.ImageUrl" alt="@config.ProductName" />
+                                    </div>
+                                    <p class="title">@config.ProductName</p>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">Printer Shelf</button>
+                </h2>
+                <div id="collapse-3" class="accordion-collapse collapse show" aria-labelledby="heading-3">
+                    <div class="accordion-body">
+                        <div class="row">
+
+                            @foreach (var config in Model.Where(con => con.ProductType == "printer_shelf"))
+                            {
+                                <div class="item @(Model.IndexOf(config) == 0 ? "selected" : "")">
+                                    <div class="image">
+                                        <img decoding="async" src="@config.ImageUrl" alt="@config.ProductName" />
+                                    </div>
+                                    <p class="title">@config.ProductName</p>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-track_accessories">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-track_accessories" aria-expanded="true" aria-controls="collapse-track_accessories">Wire Basket</button>
+                </h2>
+                <div id="collapse-track_accessories" class="accordion-collapse collapse show" aria-labelledby="heading-track_accessories">
+                    <div class="accordion-body">
+                        <div class="row">
+                            @foreach (var config in Model.Where(con => con.ProductType == "wire_basket"))
+                            {
+                                <div class="item @(Model.IndexOf(config) == 0 ? "selected" : "")">
+                                    <div class="image">
+                                        <img decoding="async" src="@config.ImageUrl" alt="@config.ProductName" />
+                                    </div>
+                                    <p class="title">@config.ProductName</p>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-lower_track">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-lower_track" aria-expanded="true" aria-controls="collapse-lower_track">CPU Holder</button>
+                </h2>
+                <div id="collapse-lower_track" class="accordion-collapse collapse show" aria-labelledby="heading-lower_track">
+                    <div class="accordion-body">
+                        <div class="row">
+                            @foreach (var config in Model.Where(con => con.ProductType == "cpu_holder"))
+                            {
+                                <div class="item @(Model.IndexOf(config) == 0 ? "selected" : "")">
+                                    <div class="image">
+                                        <img decoding="async" src="@config.ImageUrl" alt="@config.ProductName" />
+                                    </div>
+                                    <p class="title">@config.ProductName</p>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="get-quote">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="input-group mb-3"><button type="button" class="btn btn-primary btn-block btn-lg" data-toggle="#myModal" data-target="modal">Get Quote</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

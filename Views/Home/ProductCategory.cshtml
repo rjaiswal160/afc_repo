@@ -1,0 +1,75 @@
+﻿@using Afc_web.Common;
+@using Afc_web.Models;
+@model List<ProductCategoryModel>
+<h1>@ViewData["Title"]</h1>
+<style>
+    /* .tile-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 24px;
+        padding: 20px;
+    }
+
+    .tile {
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .tile:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+        }
+
+        .tile img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+    .tile-title {
+        font-size: 1rem;
+        margin: 12px;
+        text-align: center;
+        color: #333;
+    }
+
+    .tile-meta {
+        text-align: center;
+        margin-bottom: 12px;
+        font-size: 0.9rem;
+        color: #555;
+    }
+ */
+
+
+</style>
+<div id="woopack-t4y2i1hawv95" class="woopack-products-grid-wrap woocommerce">
+    <ul class="woopack-products products" style="position: relative; height: 1718.86px;">
+        <h1>@Model.FirstOrDefault()?.CategoryName</h1>
+        <ul class="tile-grid">
+            @foreach (var config in Model)
+            {
+                <li class="tile">
+                    <div class="tile-image">
+                        <a href="~/product/@config.SEO_Slug" title="@config.Name">
+                            <img src="@config.ImageUrl" alt="@config.Name" class="product-image" />
+                        </a>
+                    </div>
+                    <div class="tile-content">
+                        <h3 class="tile-title">
+                            <a href="~/product/@config.SEO_Slug" title="@config.Name">@config.Name</a>
+                        </h3>
+                        <div class="tile-meta">
+                            <span class="sku">SKU: @config.SKU</span>
+                        </div>
+                    </div>
+                </li>
+            }
+        </ul>
+
+    </ul>
+</div>

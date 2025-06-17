@@ -1,0 +1,984 @@
+@font-face {
+    font-family: "Segoe UI";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SegoeUI.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SegoeUI.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SegoeUI.woff2) format("woff2"), url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SegoeUI.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SegoeUI.ttf) format("truetype"), url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SegoeUI.svg#SegoeUI) format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Segoe UI";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SegoeUI-Bold.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SegoeUI-Bold.eot?#iefix) format("embedded-opentype"), url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SegoeUI-Bold.woff2) format("woff2"), url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SegoeUI-Bold.woff) format("woff"), url(//afcindustries.com/wp-content/th//afcindustries.com/wp-contentemes/afc-child-theme/assets/css/../fonts/SegoeUI-Bold.ttf) format("truetype"), url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SegoeUI-Bold.svg#SegoeUI-Bold) format("svg");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-Regular.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-Regular.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-Regular.woff2) format("woff2"), url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-Regular.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-Regular.ttf) format("truetype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-Regular.svg#Poppins-Regular) format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-Bold.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-Bold.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-Bold.woff2) format("woff2"), url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-Bold.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-Bold.ttf) format("truetype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-Bold.svg#Poppins-Bold) format("svg");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-SemiBold.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-SemiBold.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-SemiBold.woff2) format("woff2"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-SemiBold.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-SemiBold.ttf) format("truetype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-SemiBold.svg#Poppins-SemiBold) format("svg");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-Medium.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-Medium.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-Medium.woff2) format("woff2"), url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-Medium.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-Medium.ttf) format("truetype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-Medium.svg#Poppins-Medium) format("svg");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-Light.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-Light.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-Light.woff2) format("woff2"), url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-Light.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-Light.ttf) format("truetype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Poppins-Light.svg#Poppins-Light) format("svg");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Source Sans 3";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-SemiBold.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-SemiBold.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-SemiBold.woff2) format("woff2"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-SemiBold.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-SemiBold.ttf) format("truetype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-SemiBold.svg#SourceSans3-SemiBold) format("svg");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Source Sans 3";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-ExtraBold.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-ExtraBold.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-ExtraBold.woff2) format("woff2"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-ExtraBold.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-ExtraBold.ttf) format("truetype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-ExtraBold.svg#SourceSans3-ExtraBold) format("svg");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Source Sans 3";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-Bold.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-Bold.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-Bold.woff2) format("woff2"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-Bold.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-Bold.ttf) format("truetype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-Bold.svg#SourceSans3-Bold) format("svg");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Source Sans 3";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-Light.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-Light.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-Light.woff2) format("woff2"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-Light.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-Light.ttf) format("truetype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-Light.svg#SourceSans3-Light) format("svg");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Source Sans 3";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-ExtraLight.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-ExtraLight.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-ExtraLight.woff2) format("woff2"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-ExtraLight.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-ExtraLight.ttf) format("truetype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-ExtraLight.svg#SourceSans3-ExtraLight) format("svg");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Source Sans 3";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-Regular.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-Regular.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-Regular.woff2) format("woff2"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-Regular.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-Regular.ttf) format("truetype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-Regular.svg#SourceSans3-Regular) format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Source Sans 3";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-Medium.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-Medium.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-Medium.woff2) format("woff2"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-Medium.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-Medium.ttf) format("truetype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/SourceSans3-Medium.svg#SourceSans3-Medium) format("svg");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Outfit";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-ExtraBold.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-ExtraBold.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-ExtraBold.woff2) format("woff2"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-ExtraBold.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-ExtraBold.ttf) format("truetype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-ExtraBold.svg#Outfit-ExtraBold) format("svg");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Outfit";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Light.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Light.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Light.woff2) format("woff2"), url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Light.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Light.ttf) format("truetype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Light.svg#Outfit-Light) format("svg");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Outfit";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Thin.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Thin.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Thin.woff2) format("woff2"), url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Thin.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Thin.ttf) format("truetype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Thin.svg#Outfit-Thin) format("svg");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Outfit";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-SemiBold.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-SemiBold.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-SemiBold.woff2) format("woff2"), url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-SemiBold.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-SemiBold.ttf) format("truetype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-SemiBold.svg#Outfit-SemiBold) format("svg");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Outfit";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Regular.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Regular.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Regular.woff2) format("woff2"), url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Regular.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Regular.ttf) format("truetype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Regular.svg#Outfit-Regular) format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Outfit";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Medium.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Medium.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Medium.woff2) format("woff2"), url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Medium.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Medium.ttf) format("truetype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Medium.svg#Outfit-Medium) format("svg");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Outfit";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-ExtraLight.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-ExtraLight.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-ExtraLight.woff2) format("woff2"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-ExtraLight.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-ExtraLight.ttf) format("truetype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-ExtraLight.svg#Outfit-ExtraLight) format("svg");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Outfit";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Black.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Black.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Black.woff2) format("woff2"), url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Black.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Black.ttf) format("truetype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Black.svg#Outfit-Black) format("svg");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Outfit";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Bold.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Bold.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Bold.woff2) format("woff2"), url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Bold.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Bold.ttf) format("truetype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/Outfit-Bold.svg#Outfit-Bold) format("svg");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Francois One";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/FrancoisOne-Regular.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/FrancoisOne-Regular.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/FrancoisOne-Regular.woff2) format("woff2"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/FrancoisOne-Regular.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/FrancoisOne-Regular.ttf) format("truetype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/FrancoisOne-Regular.svg#FrancoisOne-Regular) format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "AR One Sans";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/AROneSans-Regular.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/AROneSans-Regular.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/AROneSans-Regular.woff2) format("woff2"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/AROneSans-Regular.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/AROneSans-Regular.ttf) format("truetype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/AROneSans-Regular.svg#AROneSans-Regular) format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "AR One Sans";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/AROneSans-Bold.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/AROneSans-Bold.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/AROneSans-Bold.woff2) format("woff2"), url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/AROneSans-Bold.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/AROneSans-Bold.ttf) format("truetype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/AROneSans-Bold.svg#AROneSans-Bold) format("svg");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "AR One Sans";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/AROneSans-SemiBold.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/AROneSans-SemiBold.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/AROneSans-SemiBold.woff2) format("woff2"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/AROneSans-SemiBold.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/AROneSans-SemiBold.ttf) format("truetype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/AROneSans-SemiBold.svg#AROneSans-SemiBold) format("svg");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "AR One Sans";
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/AROneSans-Medium.eot);
+    src: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/AROneSans-Medium.eot?#iefix) format("embedded-opentype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/AROneSans-Medium.woff2) format("woff2"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/AROneSans-Medium.woff) format("woff"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/AROneSans-Medium.ttf) format("truetype"),
+        url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../fonts/AROneSans-Medium.svg#AROneSans-Medium) format("svg");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+.advance-woo-search .aws-search-form .aws-wrapper .aws-search-field {
+    border-radius: 0;
+    background-color: #fff;
+    color: #000;
+    padding: 7px 15px;
+    font-size: 16px !important;
+    line-height: 1.5;
+    border-color: #1b69b4;
+    border-right: 0;
+}
+.advance-woo-search .aws-search-form .aws-search-btn,
+.advance-woo-search .aws-search-form .aws-search-btn:hover {
+    border-radius: 0;
+    background-color: #1b69b4;
+    color: #fff;
+    border: 1px solid #1b69b4;
+}
+.advance-woo-search .aws-search-form .aws-search-btn span.aws-search-btn_icon,
+.advance-woo-search .aws-search-form .aws-search-btn:hover span.aws-search-btn_icon {
+    color: #fff;
+}
+.aws-search-result ul li.aws_result_item .aws_result_link {
+    padding: 10px;
+}
+.aws-search-result ul li.aws_result_item .aws_result_link .aws_result_content .aws_result_title {
+    color: #000;
+    font-size: 16px;
+    line-height: 24px;
+}
+.aws-search-result ul li.aws_result_item .aws_result_link .aws_result_content .aws_result_sku {
+    color: #000;
+    font-size: 16px;
+    line-height: 24px;
+}
+.aws-search-result ul li.aws_result_item.aws_search_more a {
+    font-size: 18px;
+}
+.top-menu h2.widgettitle {
+    display: none;
+}
+.top-menu .mega-menu > .mega-menu-item > a.mega-menu-link {
+    height: auto !important;
+    line-height: 1 !important;
+}
+.top-menu .mega-menu > .mega-menu-item.mega-menu-item-has-children .mega-sub-menu > .mega-menu-item.mega-menu-item-has-children > .mega-sub-menu {
+    padding: 15px !important;
+}
+.top-menu .mega-menu > .mega-menu-item.mega-menu-item-has-children .mega-sub-menu > .mega-menu-item.mega-menu-item-has-children > .mega-sub-menu .mega-sub-menu .mega-menu-item {
+    padding: 0 !important;
+}
+.top-menu .mega-menu > .mega-menu-item.mega-menu-item-has-children .mega-sub-menu > .mega-menu-item.mega-menu-item-has-children > .mega-sub-menu .mega-sub-menu .mega-menu-item a {
+    line-height: 2 !important;
+}
+.hero-slider .fl-content-slider .fl-content-slider-wrapper .fl-slide {
+    position: relative;
+}
+.hero-slider .fl-content-slider .fl-content-slider-wrapper .fl-slide .fl-slide-content-wrap {
+    position: absolute;
+    bottom: 30px;
+}
+.fl-col.icon-image-setting {
+    flex: none;
+}
+.fl-col.icon-image-setting > .fl-col-content {
+    z-index: 99;
+}
+.fl-col.text-column {
+    margin-left: -100px;
+}
+.fl-col.text-column > .fl-col-content {
+    padding-left: 70px;
+}
+.fl-col.text-column .cat-icon-headline-area .fl-icon-wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.fl-col.text-column .cat-icon-headline-area .fl-icon-wrap .fl-icon {
+    flex: 0 0 10%;
+}
+.fl-col.text-column .cat-icon-headline-area .fl-icon-wrap .fl-icon-text {
+    flex: 0 0 90%;
+    padding: 0;
+    height: auto;
+}
+.radiology-risk-factor-desc-col .radiology-risk-factor-per-col {
+    flex: none;
+}
+.radiology-risk-factor-desc-col .radiology-risk-factor-per-col > .fl-col-content {
+    z-index: 9;
+}
+.radiology-risk-factor-desc-col .radiology-risk-factor-text-col {
+    margin-left: -90px;
+}
+.radiology-risk-factor-desc-col .radiology-risk-factor-text-col > .fl-col-content {
+    padding-left: 90px;
+}
+.product-slider .woopack-products .owl-item .product .woopack-product-content .woopack-product-title {
+    font-size: 16px !important;
+    line-height: 1.3 !important;
+}
+.product-slider .woopack-products .owl-item .product .woopack-product-content .product_meta {
+    border-top: 0 !important;
+    padding: 0 !important;
+}
+.product-slider .woopack-products .owl-item .product .woopack-product-content .product_meta span.sku_wrapper {
+    font-size: 13px;
+    font-weight: 700;
+}
+.radiology-risk-factor-row .fl-row-content {
+    border: 1px solid #b2b2b2;
+    border-radius: 10px;
+}
+.radiology-risk-factor-row .radiologists-risk-title .fl-heading {
+    margin-top: -47px !important;
+}
+.radiology-risk-factor-row .radiologists-risk-title .fl-heading span {
+    display: inline-block;
+    background-color: #fff;
+    padding: 0 50px;
+}
+.head-category-list .pp-infobox .pp-icon-wrapper .pp-infobox-icon .pp-icon {
+    margin-top: 5px;
+    display: inline-block;
+}
+.head-category-list .pp-infobox .pp-heading-wrapper .pp-infobox-title-wrapper .pp-infobox-title {
+    background-color: #0b3f12;
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid #0b3f12;
+}
+.head-category-list .pp-infobox:hover .pp-heading-wrapper .pp-infobox-title-wrapper .pp-infobox-title {
+    background-color: #fff;
+}
+.title-over-image-col .fl-col-group-nested .title-over-image .fl-col-content {
+    z-index: 99;
+    position: relative;
+}
+.telehealth-product-grid .woopack-products .woopack-product-grid .woopack-product-image img {
+    border: 0 !important;
+    margin: 0 0 5px;
+}
+.telehealth-product-grid .woopack-products .woopack-product-grid .woopack-product-content {
+    padding: 0 5px 10px;
+}
+.telehealth-product-grid .woopack-products .woopack-product-grid .woopack-product-content .woopack-product-title {
+    font-size: 18px !important;
+    padding: 5px 0;
+}
+.telehealth-product-grid .woopack-products .woopack-product-grid .woopack-product-content .woopack-product-title a {
+    color: #1b69b4 !important;
+    margin: 0;
+}
+.telehealth-product-grid .woopack-products .woopack-product-grid .woopack-product-content .woopack-product-meta {
+    margin: 5px 0 0;
+}
+.telehealth-product-grid .woopack-products .woopack-product-grid .woopack-product-content .woopack-product-meta .product_meta {
+    border: 0 !important;
+    padding: 0;
+}
+.telehealth-product-grid .woopack-products .woopack-product-grid .woopack-product-content .woopack-product-meta .product_meta .sku_wrapper {
+    font-size: 14px !important;
+}
+.telehealth-product-grid .woopack-products .woopack-product-grid .woopack-product-content .woopack-product-meta .product_meta .sku_wrapper .sku {
+    font-weight: 400 !important;
+}
+.catalog-grid .pp-content-posts .pp-content-post-grid .pp-content-post.pp-post-2n .pp-content-alternate-wrap {
+    flex-direction: row !important;
+}
+.product-page-header-col .fl-module.fl-module-heading h1.fl-heading {
+    margin: 10px !important;
+    padding: 10px !important;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+.filter-menu-col-title h2.fl-heading {
+    background-color: #1b69b4;
+    padding: 12px 10px !important;
+}
+.product-listing .woopack-products.products .product .woopack-product-image img {
+    border: 0 !important;
+    margin-bottom: 5px !important;
+}
+.product-listing .woopack-products.products .product .woopack-product-content {
+    padding: 0 5px !important;
+}
+.product-listing .woopack-products.products .product .woopack-product-content .woopack-product-title {
+    padding: 0;
+    font-weight: 700;
+}
+.product-listing .woopack-products.products .product .woopack-product-content .woopack-product-meta {
+    margin-top: 0;
+}
+.product-listing .woopack-products.products .product .woopack-product-content .woopack-product-meta .product_meta {
+    border: 0;
+}
+.product-listing .woopack-products.products .product .woopack-product-content .woopack-product-meta .product_meta .sku_wrapper {
+    font-weight: 700;
+}
+.contact-form-table table thead.uabb-table-header {
+    display: none !important;
+}
+.contact-form-table table tbody.uabb-table-features tr td:first-child {
+    background-color: #f1f1f1;
+}
+.contact-form-table table tbody.uabb-table-features tr td a {
+    color: #000 !important;
+}
+.contact-form-table table tbody.uabb-table-features tr:hover td:last-child {
+    background-color: #ddd;
+}
+.two-col-row {
+    display: flex;
+}
+.form-field.\37 5-width {
+    padding-right: calc(10px / 2);
+    padding-left: calc(10px / 2);
+    margin-bottom: 20px;
+    width: 80%;
+}
+.two-col-row .\32 5-width {
+    padding-right: calc(10px / 2);
+    padding-left: calc(10px / 2);
+    margin-bottom: 20px;
+    width: 20%;
+}
+.single.single-product .woocommerce-product-gallery .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image a img {
+    border: 0;
+}
+.single.single-product .woocommerce-product-gallery li img {
+    border: 0 !important;
+}
+.single.single-product h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #1b69b4;
+    margin: 5px 0;
+}
+.single.single-product .related.products > h2 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #1b69b4;
+}
+.single.single-product .products {
+    padding: 0;
+}
+.single.single-product .products .product h2 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+.single.single-product .product_meta > span {
+    display: block;
+}
+.single.single-product .fl-module-fl-woo-product-description {
+    margin-bottom: 0 !important;
+}
+.single.single-product .fl-module-fl-woo-product-description .col-md-6,
+.single.single-product .woocommerce-tabs .woocommerce-Tabs-panel .col-md-6 {
+    width: 100%;
+    float: none;
+}
+.single.single-product .fl-module-fl-woo-product-description .col-md-6 p,
+.single.single-product .woocommerce-tabs .woocommerce-Tabs-panel .col-md-6 p {
+    display: none;
+}
+.single.single-product .woocommerce-tabs .woocommerce-Tabs-panel h2 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #1b69b4;
+}
+.single.single-product .woocommerce-tabs .woocommerce-Tabs-panel h3 {
+    font-weight: 700;
+}
+.single.single-product .acf-colors {
+    display: flex !important;
+}
+.single.single-product .acf-colors .acf-color .acf-color-label {
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    max-width: 75px !important;
+    line-height: 1.2 !important;
+}
+.fl-theme-builder-singular-configurator-page .accordion .accordion-item {
+    margin-bottom: 5px;
+}
+.fl-theme-builder-singular-configurator-page .accordion .accordion-item .accordion-header {
+    margin-top: 0;
+}
+.fl-theme-builder-singular-configurator-page .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 18px !important;
+}
+.fl-theme-builder-singular-configurator-page .accordion .accordion-item .accordion-collapse .accordion-body {
+    padding: 15px;
+}
+.fl-theme-builder-singular-configurator-page .accordion .accordion-item .accordion-collapse .accordion-body .row {
+    margin: 0;
+}
+.fl-theme-builder-singular-configurator-page .accordion .accordion-item .accordion-collapse .accordion-body .row > div {
+    border-width: 2px !important;
+    text-align: center;
+    padding: 1% !important;
+}
+    .fl-theme-builder-singular-configurator-page .accordion .accordion-item .accordion-collapse .accordion-body .row > div .image.none {
+        position: relative;
+        /*background-image: url(//afcindustries.com/wp-content/themes/afc-child-theme/assets/css/../img/none-img.png);*/
+        background-image: url(../wp-content/themes/afc-child-theme/assets/img/none-img.png);
+        background-size: cover;
+    }
+.fl-theme-builder-singular-configurator-page .accordion .accordion-item .accordion-collapse .accordion-body .row > div p {
+    line-height: 1.2;
+    text-align: center;
+}
+.fl-theme-builder-singular-configurator-page .accordion .accordion-item .accordion-collapse .accordion-body .row > div.item.size {
+    padding: 3% 0 !important;
+}
+.fl-theme-builder-singular-configurator-page .accordion .accordion-item .accordion-collapse .accordion-body .row > div.item.size.two-per {
+    padding: 4.5% 0 !important;
+}
+.fl-theme-builder-singular-configurator-page .modal .modal-header .modal-title {
+    font-weight: 700;
+    margin-top: 0;
+    font-size: 20px;
+}
+.fl-theme-builder-singular-configurator-page .modal .modal-header button.close {
+    font-size: 20px;
+    padding: 8px 16px;
+    line-height: 1;
+}
+.fl-theme-builder-singular-configurator-page .modal .modal-body table.table {
+    border: 1px solid #ccc;
+}
+.fl-theme-builder-singular-configurator-page .modal .modal-body table.table td,
+.fl-theme-builder-singular-configurator-page .modal .modal-body table.table th {
+    border: 1px solid #ccc;
+}
+.fl-theme-builder-singular-configurator-page .modal .modal-body .form-control {
+    height: 52px;
+}
+.fl-theme-builder-singular-configurator-page .modal .modal-body .row > div:first-child {
+    height: 470px !important;
+}
+.fl-theme-builder-singular-configurator-page .modal .modal-body button[type="submit"] {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px;
+}
+body header.fl-theme-builder-header-scrolled .header-top-row {
+    display: none;
+}
+.inquiry-form form .full-row br,
+.catalog-request-from form .full-row br {
+    display: none;
+}
+.inquiry-form form .full-row,
+.catalog-request-from form .full-row {
+    display: flex;
+}
+.inquiry-form form .full-row .half-row,
+.catalog-request-from form .full-row .half-row {
+    flex: 1;
+    padding-right: 15px;
+}
+.inquiry-form form .full-row > p,
+.catalog-request-from form .full-row > p {
+    flex: 1;
+    padding-right: 15px;
+}
+.inquiry-form form .full-row input[type="submit"],
+.catalog-request-from form .full-row input[type="submit"] {
+    margin-top: 10px;
+}
+.inquiry-form form .full-row input[type="submit"]:hover,
+.catalog-request-from form .full-row input[type="submit"]:hover {
+    border-radius: 0;
+}
+.catalog-grid {
+    display: none;
+    opacity: 0;
+}
+.catalog-grid.showit {
+    display: block;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    opacity: 1;
+}
+.contact-info-table thead {
+    display: none !important;
+}
+.fl-post-module-woo-ordering {
+    display: none;
+}
+.fl-accordion .fl-accordion-button a:focus {
+    outline: none;
+}
+.ergonomic-workstations-landing-page .pp-modal-content form {
+    padding: 10px 0 35px;
+}
+.ergonomic-workstations-landing-page .pp-modal-content form p {
+    margin: 0;
+}
+.ergonomic-workstations-landing-page .pp-modal-content form .form-field {
+    margin-bottom: 20px;
+}
+.ergonomic-workstations-landing-page .pp-modal-content form .form-field label {
+    font-family: "Francois One", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #04466b;
+}
+.ergonomic-workstations-landing-page .pp-modal-content form .form-field input[type="text"],
+.ergonomic-workstations-landing-page .pp-modal-content form .form-field input[type="password"],
+.ergonomic-workstations-landing-page .pp-modal-content form .form-field input[type="email"],
+.ergonomic-workstations-landing-page .pp-modal-content form .form-field input[type="tel"],
+.ergonomic-workstations-landing-page .pp-modal-content form .form-field input[type="date"],
+.ergonomic-workstations-landing-page .pp-modal-content form .form-field input[type="month"],
+.ergonomic-workstations-landing-page .pp-modal-content form .form-field input[type="week"],
+.ergonomic-workstations-landing-page .pp-modal-content form .form-field input[type="time"],
+.ergonomic-workstations-landing-page .pp-modal-content form .form-field input[type="number"],
+.ergonomic-workstations-landing-page .pp-modal-content form .form-field input[type="search"],
+.ergonomic-workstations-landing-page .pp-modal-content form .form-field input[type="url"],
+.ergonomic-workstations-landing-page .pp-modal-content form .form-field textarea {
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 0;
+    border-color: #999;
+}
+.ergonomic-workstations-landing-page .pp-modal-content form .form-field.submit-button input {
+    border: 0;
+    border-top-left-radius: 57px;
+    border-top-right-radius: 57px;
+    border-bottom-left-radius: 57px;
+    border-bottom-right-radius: 57px;
+    box-shadow: 5px 22px 20px -5px #00446b;
+    font-family: "Francois One", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: #5cab7d;
+    padding: 25px 40px;
+    text-transform: uppercase;
+}
+.ergonomic-workstations-landing-page .pp-modal-content form .form-field.submit-button input:hover {
+    background-color: #4c8c67;
+}
+.rsna-form form .form-div p {
+    margin: 0;
+}
+.rsna-form form .form-div .form-field input[type="text"],
+.rsna-form form .form-div .form-field input[type="password"],
+.rsna-form form .form-div .form-field input[type="email"],
+.rsna-form form .form-div .form-field input[type="tel"],
+.rsna-form form .form-div .form-field input[type="date"],
+.rsna-form form .form-div .form-field input[type="month"],
+.rsna-form form .form-div .form-field input[type="week"],
+.rsna-form form .form-div .form-field input[type="number"],
+.rsna-form form .form-div .form-field input[type="search"],
+.rsna-form form .form-div .form-field input[type="url"],
+.rsna-form form .form-div .form-field textarea {
+    padding: 8px 12px;
+}
+.rsna-form form .form-div .form-field textarea {
+    border-radius: 16px;
+    resize: none;
+}
+.rsna-form form .form-div .form-field {
+    margin-right: 15px;
+    position: relative;
+}
+.rsna-form form .form-div .form-field label {
+    position: absolute;
+    left: 15px;
+    z-index: 1;
+    top: 9px;
+    transition: all 0.3s ease-in-out;
+}
+.rsna-form form .form-div .form-field label.active-label {
+    color: #000;
+    top: -20px;
+    left: 0;
+}
+.rsna-form form .form-div {
+    position: relative;
+}
+.rsna-form form .form-div .form-field.submit-button {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+}
+.rsna-form form .form-div .form-field.submit-button input[type="submit"] {
+    border-radius: 16px;
+}
+.rsna-form form .form-div .form-field .wpcf7-form-control-wrap .wpcf7-not-valid-tip {
+    display: inline-block;
+    position: absolute;
+    bottom: -23px;
+    left: 15px;
+}
+.white-gra-overlay .fl-row-content-wrap:after {
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 1) 48%, rgba(255, 255, 255, 0.95) 52%, rgba(255, 255, 255, 0.55) 58%, rgba(255, 255, 255, 0.15) 65%, rgba(255, 255, 255, 0.05) 70%, rgba(255, 255, 255, 0) 85%);
+}
+.headline-border h2.fl-heading span.fl-heading-text {
+    border-bottom: 1px solid;
+}
+.rsna-faq .pp-accordion-item-active .pp-accordion-button {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.rsna-faq .pp-accordion-content {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.rsna-faq .pp-accordion-item .pp-accordion-button-icon:before {
+    transform: translate(-10px, -2px);
+}
+@media only screen and (min-width: 1050px) and (max-width: 1189px) {
+    #mega-menu-wrap-header #mega-menu-header > li.mega-menu-item > a.mega-menu-link {
+        padding: 20px !important;
+    }
+    .top-big-title.fl-module-heading h2.fl-heading {
+        font-size: 50px;
+    }
+    .bottom-big-title.fl-module-heading h2.fl-heading {
+        font-size: 90px;
+    }
+    .rsna-logo > .fl-module-content {
+        margin-top: 150px;
+    }
+    .rsna-form form .form-div .form-field.submit-button input[type="submit"] {
+        font-size: 28px;
+    }
+}
+@media only screen and (min-width: 993px) and (max-width: 1049px) {
+    #mega-menu-wrap-header #mega-menu-header > li.mega-menu-item > a.mega-menu-link {
+        padding: 20px 15px !important;
+    }
+    .top-big-title.fl-module-heading h2.fl-heading {
+        font-size: 50px;
+    }
+    .bottom-big-title.fl-module-heading h2.fl-heading {
+        font-size: 90px;
+    }
+    .rsna-logo > .fl-module-content {
+        margin-top: 150px;
+    }
+    .rsna-form form .form-div .form-field.submit-button input[type="submit"] {
+        font-size: 28px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .hide-col {
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .top-menu-mobile #mega-menu-wrap-header .mega-menu-toggle.mega-menu-open + #mega-menu-header {
+        margin-top: 15px;
+    }
+    .top-menu-mobile.top-menu .mega-menu > .mega-menu-item > a.mega-menu-link {
+        padding: 12px 15px !important;
+    }
+    .top-menu-mobile.top-menu .mega-menu > .mega-menu-item > ul.mega-sub-menu > .mega-menu-item > a.mega-menu-link {
+        line-height: 1 !important;
+        padding: 12px 15px !important;
+    }
+    .top-menu .mega-menu > .mega-menu-item.mega-menu-item-has-children .mega-sub-menu > .mega-menu-item.mega-menu-item-has-children > .mega-sub-menu {
+        padding: 0 15px 10px !important;
+    }
+    .rsna-form form .form-div .form-field.submit-button input[type="submit"] {
+        font-size: 26px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .radiology-risk-factor-desc-col > .fl-col-content > .fl-col-group {
+        display: flex;
+    }
+    .radiology-risk-factor-desc-col .fl-col.radiology-risk-factor-per-col {
+        width: 19% !important;
+    }
+    .fl-builder-content .fl-col.tab-about-us {
+        width: 100% !important;
+    }
+    .rsna-form form .form-div .form-field.submit-button input[type="submit"] {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .hero-slider .fl-content-slider-wrapper .fl-slide .fl-slide-content {
+        display: none !important;
+    }
+    .fl-col.text-column {
+        margin-left: -75px;
+    }
+    .head-category-list .pp-infobox > div {
+        flex-direction: row !important;
+    }
+    .head-category-list .pp-infobox > div .pp-icon-wrapper {
+        flex: none !important;
+    }
+    .head-category-list .pp-infobox > div .pp-heading-wrapper {
+        flex: 1 !important;
+    }
+    .rsna-form form .two-col-row {
+        display: block;
+    }
+    .rsna-form form .form-div .form-field {
+        margin-right: 0;
+    }
+    .rsna-form form .form-div .form-field.submit-button {
+        position: relative;
+        bottom: auto;
+        left: auto;
+    }
+    .rsna-faq .pp-accordion-item .pp-accordion-button-icon:before {
+        transform: translate(0px, -2px);
+    }
+    .white-gra-overlay .fl-row-content-wrap:after {
+        background-image: linear-gradient(360deg, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0.55) 52%, rgba(0, 0, 0, 0.45) 58%, rgba(0, 0, 0, 0.15) 100%);
+    }
+    .white-gra-overlay .fl-module-heading .fl-heading span.fl-heading-text,
+    .white-gra-overlay .fl-module-content .fl-rich-text * {
+        color: #fff !important;
+    }
+}
+@media only screen and (max-width: 479px) {
+    .hero-slider .fl-content-slider-wrapper .fl-slide .fl-slide-content {
+        display: none !important;
+    }
+    .fl-col.text-column {
+        margin-left: -75px;
+    }
+    .fl-col.text-column .cat-icon-headline-area .fl-icon-wrap .fl-icon-text h2 {
+        font-size: 14px !important;
+    }
+    .radiology-risk-factor-desc-col .fl-col.radiology-risk-factor-per-col {
+        width: 40% !important;
+    }
+    .radiology-risk-factor-desc-col .radiology-risk-factor-text-col {
+        width: 90% !important;
+        margin-left: -30%;
+    }
+    .radiology-risk-factor-desc-col .radiology-risk-factor-text-col > .fl-col-content {
+        padding-left: 30%;
+    }
+    .catalog-grid .pp-content-posts .pp-content-post-grid .pp-content-post.pp-post-2n .pp-content-alternate-wrap {
+        flex-direction: column !important;
+    }
+    .fl-theme-builder-singular-configurator-page .col > canvas {
+        width: 300px !important;
+        height: 300px !important;
+    }
+    .fl-theme-builder-singular-configurator-page .container-fluid > .row {
+        display: block !important;
+    }
+    .inquiry-form form .full-row,
+    .catalog-request-from form .full-row {
+        display: block;
+    }
+}
+@media only screen (max-height: 777px) and (min-width: 993px) {
+    .top-menu .mega-menu .product-menu.scroll-menu > ul.mega-sub-menu {
+        overflow-y: auto !important;
+        min-height: 100vh !important;
+        height: 100vh !important;
+    }
+}
