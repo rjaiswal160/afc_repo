@@ -104,6 +104,56 @@ namespace AFC.Controllers
             return model;
 
         }
+        [HttpGet("computer-carts")]
+        public IActionResult ComputerCarts()
+        {
+            return View("ComputerCarts");
+        }
+
+        [HttpGet]
+        [Route("all-medical-carts")]
+        [Route("battery-power-carts")]
+        [Route("point-of-care-pc-cart")]
+        [Route("telemedicine-cart")]
+        [Route("telehealth-pole-cart")]
+        [Route("mobile-detector-holder")]
+        [Route("telescopic-cart")]
+        [Route("lab-cart")]
+        [Route("radiology-coat-hanger")]
+        public IActionResult Cart()
+        {
+            string id = HttpContext.Request.Path.Value?.Trim('/');
+            ProductDeskTypeViewModel model = GetProductByDeskTypeId(id);
+            return View("Cart", model);
+        }
+
+        [HttpGet("ergonomic-mounts")]
+        public IActionResult ErgonomicMounts()
+        {
+            return View("ErgonomicMounts");
+        }
+
+        [HttpGet]
+        [Route("all-ergonomic-mounts")]
+        [Route("desktop-monitor-arms")]
+        [Route("wall-mounted-monitor-arms")]
+        [Route("computer-wall-mounts")]
+        [Route("wall-mounted-workstation")]
+        [Route("floor-mount-stand")]
+        [Route("ceiling-mounted-monitor-arms")]
+        public IActionResult Mounts()
+        {
+            string id = HttpContext.Request.Path.Value?.Trim('/');
+            ProductDeskTypeViewModel model = GetProductByDeskTypeId(id);
+            return View("Mounts", model);
+        }
+
+        [HttpGet("covid-products")]
+        public IActionResult CovidProducts(string id)
+        {
+            List<ProductModel> products = GetProductData(id);
+            return View("CovidProducts");
+        }
 
 
 
